@@ -1,6 +1,5 @@
 package ConditionalStatement;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -35,7 +34,6 @@ public class Main {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-
         switch (dayOfWeek) {
             case 2:
                 System.out.println("Thứ hai");

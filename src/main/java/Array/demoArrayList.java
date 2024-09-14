@@ -1,6 +1,10 @@
 package Array;
 
+import static java.lang.System.out;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class demoArrayList {
     public static void main(String[] args) {
@@ -28,5 +32,17 @@ public class demoArrayList {
 
         int num = numbers.get(1); // Integer -> int
         System.out.println("Phần tử ở vị trí thứ 2: " + num);
+        
+        String food[] = new String[5];
+        food[0] = "Pizza";
+        food[1] = "Ramen";
+        food[2] = "Salad";
+        food[3] = "Brioche";
+        food[4] = "Coffee";
+        List<String> listFood = Arrays.asList(food);
+//        Collections.sort(listFood);
+        Collections.reverse(listFood);
+//        Collections.shuffle(listFood);
+        System.out.println(listFood);
     }
 }

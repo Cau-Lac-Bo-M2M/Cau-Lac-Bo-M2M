@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class demoArrayList {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList();
         list.add("Apple");
         list.add("Banana");
         list.add("Orange");
@@ -18,7 +18,7 @@ public class demoArrayList {
         System.out.println("-----------------------------------");
 
         //autoboxing = tự động chuyển primitive type thành đối tượng tương ứng
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList();
         numbers.add(10); // int -> Integer
 
         numbers.add(20);

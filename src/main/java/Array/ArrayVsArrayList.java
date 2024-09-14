@@ -1,6 +1,7 @@
 package Array;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 public class ArrayVsArrayList {
     public static void main(String[] args) {
@@ -17,13 +18,20 @@ public class ArrayVsArrayList {
             System.out.print(" "+ i);
         }
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList();
         arrayList.add(2);
         arrayList.add(4);
         arrayList.add(6);
         arrayList.add(8);
         arrayList.add(9);
         arrayList.add(10);
+        arrayList.forEach(new IntegerConsumer());
         System.out.println("\nArrayList: "+arrayList);
+    }
+
+    private static class IntegerConsumer implements Consumer<Integer> {
+        public void accept(Integer integer) {
+            System.out.println(integer);
+        }
     }
 }

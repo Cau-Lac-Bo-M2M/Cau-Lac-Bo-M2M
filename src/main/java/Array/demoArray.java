@@ -1,6 +1,7 @@
 package Array;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class demoArray {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class demoArray {
         System.out.println("Food menu: " + food.length);
         System.out.println("Beverage menu: " + beverage.length);
 
+        Arrays.sort(food);
         System.out.print("Food: ");
         for (int i = 0; i < food.length; i++) {
             System.out.print(food[i] + ", ");
@@ -23,6 +25,9 @@ public class demoArray {
 
         System.out.println();
         System.out.print("Beverage: ");
+        Arrays.sort(beverage, (var o1, var o2) -> {
+            return o2.compareTo(o1);
+        });
         for (String j : beverage) {
             System.out.print(j + ", ");
         }
@@ -43,5 +48,7 @@ public class demoArray {
               i = "pizza";
           }
         System.out.println(foodArray[0]);
+        
+        
     }
 }

@@ -1,7 +1,9 @@
 package Array;
 
+import static java.lang.System.out;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class demoArrayList {
@@ -38,6 +40,9 @@ public class demoArrayList {
         food[3] = "Brioche";
         food[4] = "Coffee";
         List<String> listFood = Arrays.asList(food);
-        System.out.println(listFood.get(3));
+//        Collections.sort(listFood);
+        Collections.reverse(listFood);
+//        Collections.shuffle(listFood);
+        System.out.println(listFood);
     }
 }

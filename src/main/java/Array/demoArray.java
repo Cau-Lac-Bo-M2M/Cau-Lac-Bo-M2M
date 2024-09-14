@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 public class demoArray {
     public static void main(String[] args) {
         String food[] = new String[5];
@@ -31,5 +33,15 @@ public class demoArray {
         for (String j : beverage) {
             System.out.print(j + ", ");
         }
+        
+        String foodArray[] = new String[5];
+        int[] array = new int[5];
+//        for(int i = 0; i<5 ; i++){
+//            array[i] = i;
+//        }
+          for(String i: foodArray){
+              i = "pizza";
+          }
+        System.out.println(foodArray[0]);
     }
 }

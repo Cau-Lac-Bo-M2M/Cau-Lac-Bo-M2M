@@ -17,7 +17,7 @@ public class demoArray {
         System.out.println("Food menu: " + food.length);
         System.out.println("Beverage menu: " + beverage.length);
 
-        Arrays.sort(food);
+//        Arrays.sort(food);
         System.out.print("Food: ");
         for (int i = 0; i < food.length; i++) {
             System.out.print(food[i] + ", ");
@@ -38,17 +38,19 @@ public class demoArray {
         for (String j : beverage) {
             System.out.print(j + ", ");
         }
-        
+        System.out.println();
+
+        //neu array rong phai dung for thuong
         String foodArray[] = new String[5];
         int[] array = new int[5];
-//        for(int i = 0; i<5 ; i++){
-//            array[i] = i;
-//        }
-          for(String i: foodArray){
+        for(int i = 0; i<5 ; i++){
+            foodArray[i] = i + " ";
+        }
+
+        //for-each truy xuat du lieu co trong array
+          for(String i : foodArray){
               i = "pizza";
           }
         System.out.println(foodArray[0]);
-        
-        
     }
 }

@@ -1,7 +1,7 @@
 package Array;
 
 import java.util.ArrayList;
-//import java.util.function.Consumer;
+import java.util.function.Consumer;
 
 public class ArrayVsArrayList {
     public static void main(String[] args) {

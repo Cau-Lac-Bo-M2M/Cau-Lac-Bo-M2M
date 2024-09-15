@@ -21,10 +21,9 @@ public class demoArrayList {
         System.out.println("Phần tử ở vị trí thứ 2: " + fruit);
         System.out.println("-----------------------------------");
 
-        //autoboxing = tự động chuyển primitive type thành đối tượng tương ứng
+        //autoboxing = tự động chuyển primitive type thành đối tượng tương ứng (Wrapper class)
         ArrayList<Integer> numbers = new ArrayList();
         numbers.add(10); // int -> Integer
-
         numbers.add(20);
         numbers.add(30);
 
@@ -39,9 +38,9 @@ public class demoArrayList {
         food[2] = "Salad";
         food[3] = "Brioche";
         food[4] = "Coffee";
-        List<String> listFood = Arrays.asList(food);
-//        Collections.sort(listFood);
-        Collections.reverse(listFood);
+        List<String> listFood = Arrays.asList(food); //chuyen Array thanh List
+        Collections.sort(listFood);
+//        Collections.reverse(listFood);
 //        Collections.shuffle(listFood);
         System.out.println(listFood);
     }

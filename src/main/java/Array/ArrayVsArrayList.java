@@ -30,6 +30,7 @@ public class ArrayVsArrayList {
             System.out.println(el);
         });
         System.out.println("\nArrayList: "+arrayList);
+        
     }
 
 //    private static class IntegerConsumer implements Consumer<Integer> {

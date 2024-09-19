@@ -1,7 +1,6 @@
 package Array;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class demoArray {
     public static void main(String[] args) {

@@ -32,10 +32,10 @@ public class ArrayVsArrayList {
         System.out.println("\nArrayList: "+arrayList);
     }
 
-//    private static class IntegerConsumer implements Consumer<Integer> {
-//        @Override
-//        public void accept(Integer integer) {
-//            System.out.println(integer);
-//        }
-//    }
+    private static class IntegerConsumer implements Consumer<Integer> {
+        @Override
+        public void accept(Integer integer) {
+            System.out.println(integer);
+        }
+    }
 }

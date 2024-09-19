@@ -17,7 +17,7 @@ public class demoArray {
         System.out.println("Food menu: " + food.length);
         System.out.println("Beverage menu: " + beverage.length);
 
-//        Arrays.sort(food);
+        Arrays.sort(food);
         System.out.print("Food: ");
         for (int i = 0; i < food.length; i++) {
             System.out.print(food[i] + ", ");
@@ -25,7 +25,7 @@ public class demoArray {
 
         System.out.println();
         System.out.print("Beverage: ");
-        Arrays.sort(beverage, (var o1, var o2) -> {
+        Arrays.sort(beverage, (o1, o2) -> {
             return o2.compareTo(o1);
         });
         for (String j : beverage) {
@@ -42,10 +42,10 @@ public class demoArray {
 
         //neu array rong phai dung for thuong
         String foodArray[] = new String[5];
-        int[] array = new int[5];
-        for(int i = 0; i<5 ; i++){
-            foodArray[i] = i + " ";
-        }
+//        int[] array = new int[5];
+//        for(int i = 0; i<5 ; i++){
+//            foodArray[i] = i + "pizza";
+//        }
 
         //for-each truy xuat du lieu co trong array
           for(String i : foodArray){

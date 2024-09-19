@@ -39,9 +39,9 @@ public class demoArrayList {
         food[3] = "Brioche";
         food[4] = "Coffee";
         List<String> listFood = Arrays.asList(food); //chuyen Array thanh List
-        Collections.sort(listFood);
+//        Collections.sort(listFood);
 //        Collections.reverse(listFood);
-//        Collections.shuffle(listFood);
+        Collections.shuffle(listFood);
         System.out.println(listFood);
     }
 }

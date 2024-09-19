@@ -34,10 +34,10 @@ public class demoFunction {
         System.out.println();
 
         // Generic
-//        String[] names = {"Java", "Python", "C++"};
-//        demo.printGenericArray(names);
-        Double[] num = {1.2, 3.2, 4.3};
-        demo.printGenericArray(num);
+        String[] names = {"Java", "Python", "C++"};
+        demo.printGenericArray(names);
+//        Double[] num = {1.2, 3.2, 4.3};
+//        demo.printGenericArray(num);
     }
 
     // void function

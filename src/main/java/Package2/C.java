@@ -17,8 +17,8 @@ public class C extends B {
         System.out.println(hello);
     }
     
-    @Override
-    public final void sayHello(){
-        System.out.println("Hello");
-    }
+//    @Override
+//    public final void sayHello(){
+//        System.out.println("Hello");
+//    }
 }

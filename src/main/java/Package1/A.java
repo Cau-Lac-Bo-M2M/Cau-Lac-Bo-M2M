@@ -13,6 +13,7 @@ import Package2.D;
 class A extends D {
     B b = new B();
     public static void main(String[] args) {
+        System.out.println(B.hello);
         System.out.println(E.hello);
 //        System.out.println(D.pi);
     }

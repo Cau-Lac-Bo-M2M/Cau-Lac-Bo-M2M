@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.Multilevel;
 
 public class Machine {
     public void start(){

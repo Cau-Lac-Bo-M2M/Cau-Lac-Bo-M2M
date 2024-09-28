@@ -1,4 +1,4 @@
-package Collection.Queue_Deque_PriorityQueue_ArrayDeque;
+package Collection.Queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

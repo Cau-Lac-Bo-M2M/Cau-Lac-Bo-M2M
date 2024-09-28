@@ -1,4 +1,4 @@
-package Collection.Queue_Deque_PriorityQueue_ArrayDeque;
+package Collection.Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -13,5 +13,9 @@ public class QueueExample {
         System.out.println("Phần tử đầu tiên: " + queue.peek()); // A
         System.out.println("Loại bỏ phần tử: " + queue.poll()); // A
         System.out.println("Phần tử đầu tiên tiếp theo: " + queue.peek()); // B
+
+        for(String s : queue) {
+            System.out.println(s);
+        }
     }
 }

@@ -1,4 +1,4 @@
-package Collection.Queue_Deque_PriorityQueue_ArrayDeque;
+package Collection.Queue;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -14,6 +14,10 @@ public class DequeExample {
         System.out.println("Phần tử cuối cùng: " + deque.peekLast()); // C
         System.out.println("Loại bỏ phần tử đầu tiên: " + deque.removeFirst()); // A
         System.out.println("Loại bỏ phần tử cuối cùng: " + deque.removeLast()); // C
+
+        for (String s : deque) {
+            System.out.println(s);
+        }
     }
 }
 

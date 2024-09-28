@@ -1,10 +1,11 @@
-package Collection.Queue_Deque_PriorityQueue_ArrayDeque;
+package Collection.Queue;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class PriorityQueueExample {
     public static void main(String[] args) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
 
         pq.offer(30);
         pq.offer(20);

@@ -29,4 +29,3 @@ public class TreeSetExample {
         System.out.println("Last: " + treeSet.last());
     }
 }
-

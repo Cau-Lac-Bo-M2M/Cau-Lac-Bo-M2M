@@ -1,17 +1,15 @@
 package Collection.Map.map.generalExample;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class FailFastExample {
     public static void main(String[] args) {
-        Map<String, String> countryMap = new HashMap<>();
-//        Map<String, String> countryMap = new LinkedHashMap<>();
-//        Map<String, String> countryMap = new TreeMap<>();
-//        Map<String, String> countryMap = new Hashtable<>();
-//        Map<String, String> countryMap = new ConcurrentHashMap<>();
+//        HashMap<String, String> countryMap = new HashMap<>();
+//        LinkedHashMap<String, String> countryMap = new LinkedHashMap<>();
+//        TreeMap<String, String> countryMap = new TreeMap<>();
+//        Hashtable<String, String> countryMap = new Hashtable<>();
+        ConcurrentHashMap<String, String> countryMap = new ConcurrentHashMap<>();
 
         countryMap.put("USA", "Washington, D.C.");
         countryMap.put("Japan", "Tokyo");

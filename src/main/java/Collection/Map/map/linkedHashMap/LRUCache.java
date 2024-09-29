@@ -29,7 +29,7 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
         System.out.println("Bộ nhớ đệm ban đầu: " + lruCache);
 
         // Truy cập một phần tử để nó trở thành phần tử được truy cập gần nhất
-//        lruCache.get("1");
+        lruCache.get("1");
 
         // Thêm một phần tử mới, phần tử cũ nhất sẽ bị loại bỏ
         lruCache.put("4", "four");

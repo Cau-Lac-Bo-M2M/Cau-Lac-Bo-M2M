@@ -10,11 +10,13 @@ public class ThreadSafeHashtableExample {
         // Sử dụng nhiều luồng để truy xuất và cập nhật Hashtable
         Thread thread1 = new Thread(() -> {
             hashtable.put("Germany", "Berlin");
+            hashtable.remove("France");
             System.out.println("Thread 1 thêm Germany: " + hashtable.get("Germany"));
         });
 
         Thread thread2 = new Thread(() -> {
             hashtable.put("France", "Paris");
+            hashtable.remove("Germany");
             System.out.println("Thread 2 thêm France: " + hashtable.get("France"));
         });
 
@@ -24,9 +26,9 @@ public class ThreadSafeHashtableExample {
             });
         });
 
+        thread3.start();
         thread1.start();
         thread2.start();
-        thread3.start();
     }
 }
 
